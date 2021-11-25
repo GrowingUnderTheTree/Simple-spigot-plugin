@@ -32,23 +32,48 @@ public final class Screamer extends JavaPlugin {
 
     @EventHandler
     public void onDrop(PlayerDropItemEvent e) throws InterruptedException {
+        int rest = 300;
         if (e.getItemDrop().getItemStack().getType().equals(Material.GRAVEL)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         } else if (e.getItemDrop().getItemStack().getType().equals(Material.DIRT)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         } else if (e.getItemDrop().getItemStack().getType().equals(Material.ROTTEN_FLESH)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         } else if (e.getItemDrop().getItemStack().getType().equals(Material.FEATHER)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         } else if (e.getItemDrop().getItemStack().getType().equals(Material.SAND)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         } else if (e.getItemDrop().getItemStack().getType().equals(Material.SOUL_SAND)) {
-            TimeUnit.SECONDS.sleep(600);
+            TimeUnit.SECONDS.sleep(rest);
+            switch (rest) {
+                case 60:
+                    Bukkit.getServer().broadcastMessage("掉落物即将清除！");
+            }
             e.getItemDrop().remove();
         }
     }
