@@ -19,6 +19,7 @@ public final class Screamer extends JavaPlugin {
         System.out.println("plugin started \n go GrowingUnderTheTree.github.io and support him");
         this.getCommand("kit").setExecutor(new commands());
         this.getCommand("broadcast").setExecutor(new broadcast());
+        this.getCommand("shrink").setExecutor(new shrink());
         // Plugin startup logic
 
     }

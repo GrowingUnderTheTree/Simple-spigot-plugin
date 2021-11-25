@@ -6,7 +6,7 @@
 
     <groupId>io.github.GrowingUnderTheTree</groupId>
     <artifactId>screamer</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.4-DEVBUILD</version>
     <packaging>jar</packaging>
 
     <name>Screamer</name>

@@ -12,10 +12,15 @@ commands:
   broadcast:
     description: Broadcast your lovely messages to everyone
     usage: /broadcast
+    permission: screamer.member
+  shrink:
+    description: shrink the user health
+    usage: /shrink
+    permission: screamer.admin
 permissions:
   member:
     description: basic member permission
-    default: op
+    default: not op
   admin:
     description: better permission
     default: op

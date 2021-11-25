@@ -1,5 +1,5 @@
 name: Screamer
-version: '1.1-SNAPSHOT'
+version: '1.4-DEVBUILD'
 main: io.github.growingunderthetree.screamer.Screamer
 api-version: 1.17
 load: STARTUP
@@ -12,10 +12,15 @@ commands:
   broadcast:
     description: Broadcast your lovely messages to everyone
     usage: /broadcast
+    permission: screamer.member
+  shrink:
+    description: shrink the user health
+    usage: /shrink
+    permission: screamer.admin
 permissions:
   member:
     description: basic member permission
-    default: op
+    default: not op
   admin:
     description: better permission
     default: op
