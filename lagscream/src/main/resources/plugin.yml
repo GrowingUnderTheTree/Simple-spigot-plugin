@@ -1,0 +1,21 @@
+name: Screamer
+version: '${project.version}'
+main: io.github.growingunderthetree.screamer.Screamer
+api-version: 1.17
+load: STARTUP
+description: A simple plugin for broadcasting messages and clear lag
+commands:
+  kit:
+    description: Get 32 iron ingot and 16 wood
+    usage: /kit
+    permission: Screamer.admin
+  broadcast:
+    description: Broadcast your lovely messages to everyone
+    usage: /broadcast
+permissions:
+  member:
+    description: basic member permission
+    default: op
+  admin:
+    description: better permission
+    default: op
