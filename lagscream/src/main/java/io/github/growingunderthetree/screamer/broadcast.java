@@ -16,11 +16,12 @@ public class broadcast implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
+            Player TargetPlayer = player.getServer().getPlayer(args[1]);
             if(command.getName().equalsIgnoreCase("broadcast")){
                 if(args.length < 2){
-                    player.sendMessage(ChatColor.RED + "/broadcast <Stuffs>");
+                    player.sendMessage(ChatColor.RED + "/broadcast <Stuffs> <target player>");
                 }else if(args.length > 2){
-                    player.sendMessage(ChatColor.RED + "/broadcast <stuffs>");
+                    player.sendMessage(ChatColor.RED + "/broadcast <stuffs> <target player>");
                 }else{
                     Bukkit.getServer().broadcastMessage(ChatColor.RED + args[0]);
 
