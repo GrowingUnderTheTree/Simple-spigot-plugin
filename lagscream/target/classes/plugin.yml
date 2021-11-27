@@ -1,5 +1,5 @@
 name: Screamer
-version: '2.2-ALPHA'
+version: '2.2-ALPHA Fixed'
 main: io.github.growingunderthetree.screamer.Screamer
 api-version: 1.17
 load: STARTUP

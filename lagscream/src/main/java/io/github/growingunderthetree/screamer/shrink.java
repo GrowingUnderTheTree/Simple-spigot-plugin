@@ -22,15 +22,15 @@ public class shrink implements CommandExecutor {
                 }else{
                     switch (heart) {
                         case 1:
-                            player.setHealth(3);
+                            player.setHealth(3.0D);
                         case 2:
-                            player.setHealth(6);
+                            player.setHealth(6.0D);
                         case 3:
-                            player.setHealth(9);
+                            player.setHealth(9.0D);
                         case 4:
-                            player.setHealth(12);
+                            player.setHealth(12.0D);
                         case 5:
-                            player.setHealth(15);
+                            player.setHealth(15.0D);
                     }
 
                 }
