@@ -3,15 +3,19 @@ package io.github.growingunderthetree.screamer;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public final class Screamer extends JavaPlugin {
+    public HashMap<String, Long> cooldowns = new HashMap<String, Long>();
 
     @Override
     public void onEnable() {
@@ -20,6 +24,7 @@ public final class Screamer extends JavaPlugin {
         this.getCommand("kit").setExecutor(new commands());
         this.getCommand("broadcast").setExecutor(new broadcast());
         this.getCommand("shrink").setExecutor(new shrink());
+        this.getCommand("random").setExecutor(new random());
         // Plugin startup logic
 
     }
@@ -77,5 +82,23 @@ public final class Screamer extends JavaPlugin {
             }
             e.getItemDrop().remove();
         }
+    }
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        int cooldownTime = 100; // Get number of seconds from wherever you want
+        if(cooldowns.containsKey(sender.getName())) {
+            long secondsLeft = ((cooldowns.get(sender.getName())/1000)+cooldownTime) - (System.currentTimeMillis()/1000);
+            if(secondsLeft>0) {
+                // Still cooling down
+                sender.sendMessage("You cant use that commands for another "+ secondsLeft +" seconds!");
+                return true;
+            }
+        }
+        // No cooldown found or cooldown has expired, save new cooldown
+        cooldowns.put(sender.getName(), System.currentTimeMillis());
+        this.getCommand("random").setExecutor(new random());
+        // Do Command Here
+        return true;
     }
 }
