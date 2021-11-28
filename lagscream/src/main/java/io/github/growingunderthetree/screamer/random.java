@@ -28,15 +28,15 @@ public class random implements CommandExecutor {
             int randomNum = (int)(Math.random() * 5);
             switch (randomNum) {
                 case 0:
-                    player.getInventory().addItem(iron);
+                    player.getInventory().addItem(diamond);
                 case 1:
-                    player.getInventory().addItem(wood);
+                    player.getInventory().addItem(diamond);
                 case 2:
                     player.getInventory().addItem(diamond);
                 case 3:
-                    player.getInventory().addItem(wow);
+                    player.getInventory().addItem(diamond);
                 case 4:
-                    player.getInventory().addItem(lucky);
+                    player.getInventory().addItem(diamond);
                 case 5:
                     player.getInventory().addItem(lucky, diamond);
                     Bukkit.getServer().broadcastMessage(ChatColor.BLUE + "someone got a lucky day!");
