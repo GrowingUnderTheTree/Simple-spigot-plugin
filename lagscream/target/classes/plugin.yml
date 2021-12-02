@@ -1,5 +1,5 @@
 name: Screamer
-version: '2.2-ALPHA INDEPENDENT'
+version: '2.3-ALPHA'
 main: io.github.growingunderthetree.screamer.Screamer
 api-version: 1.17
 load: STARTUP
@@ -7,8 +7,9 @@ description: A simple plugin for broadcasting messages and clear lag
 commands:
   sreefens:
     description: Get 32 iron ingot and 16 wood
-    usage: /sreefen
+    usage: /kit
     permission: Screamer.admin
+    permission-message: You have no permission lmao
   broadcast:
     description: Broadcast your lovely messages to everyone
     usage: /broadcast
@@ -25,6 +26,11 @@ commands:
     description: Give pvp gear to yourself
       usage: /teryones
       permission: screamer.admin
+  debug:
+    description: It does nothing but to test that whether this works or not
+    usage: /debug
+    permission: screamer.admin
+    permission-message: you have no permission lolol
 permissions:
   member:
     description: basic member permission

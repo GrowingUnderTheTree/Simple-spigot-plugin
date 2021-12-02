@@ -1,4 +1,5 @@
 io\github\growingunderthetree\screamer\commands.class
+io\github\growingunderthetree\screamer\debug.class
 io\github\growingunderthetree\screamer\shrink.class
 io\github\growingunderthetree\screamer\broadcast.class
 io\github\growingunderthetree\screamer\Screamer.class

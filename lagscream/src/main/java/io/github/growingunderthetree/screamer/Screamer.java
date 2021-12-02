@@ -21,12 +21,13 @@ public final class Screamer extends JavaPlugin {
     public void onEnable() {
         Bukkit.getServer().broadcastMessage("插件已开启！"+"heianzd plugin, a great server plugin for broadcasting and clear lag!");
         System.out.println("plugin started \n go GrowingUnderTheTree.github.io and support him");
-        this.getCommand("sreefen").setExecutor(new commands());
+        this.getCommand("kit").setExecutor(new commands());
         this.getCommand("broadcast").setExecutor(new broadcast());
         this.getCommand("shrink").setExecutor(new shrink());
         this.getCommand("pvpstart").setExecutor(new pvpstart());
         this.getCommand("look").setExecutor(new random());
         this.getCommand("teryones").setExecutor(new tery());
+        this.getCommand("debug").setExecutor(new debug());
         // Plugin startup logic
 
     }
