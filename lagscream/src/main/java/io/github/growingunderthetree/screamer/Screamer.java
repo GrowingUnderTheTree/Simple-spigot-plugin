@@ -28,6 +28,8 @@ public final class Screamer extends JavaPlugin {
         this.getCommand("look").setExecutor(new random());
         this.getCommand("teryones").setExecutor(new tery());
         this.getCommand("debug").setExecutor(new debug());
+        this.getCommand("look").setExecutor(new random());
+        this.getCommand("teryones").setExecutor(new tery());
         // Plugin startup logic
 
     }
@@ -85,24 +87,5 @@ public final class Screamer extends JavaPlugin {
             }
             e.getItemDrop().remove();
         }
-    }
-
-    @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        int cooldownTime = 100; // Get number of seconds from wherever you want
-        if(cooldowns.containsKey(sender.getName())) {
-            long secondsLeft = ((cooldowns.get(sender.getName())/1000)+cooldownTime) - (System.currentTimeMillis()/1000);
-            if(secondsLeft>0) {
-                // Still cooling down
-                sender.sendMessage("You cant use that commands for another "+ secondsLeft +" seconds!");
-                return true;
-            }
-        }
-        // No cooldown found or cooldown has expired, save new cooldown
-        cooldowns.put(sender.getName(), System.currentTimeMillis());
-        this.getCommand("look").setExecutor(new random());
-        this.getCommand("teryones").setExecutor(new tery());
-        // Do Command Here
-        return true;
     }
 }

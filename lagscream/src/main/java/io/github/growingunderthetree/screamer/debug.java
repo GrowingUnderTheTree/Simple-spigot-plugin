@@ -11,7 +11,7 @@ public class debug implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             player.sendMessage("|++++++++++++++++++++++++++++++++++++++++|");
-            player.sendMessage("|LagScream plugin is working perfect now!|");
+            player.sendMessage("|Screamer plugin is working perfect now! |");
             player.sendMessage("|++++++++++++++++++++++++++++++++++++++++|");
         }
         return true;
