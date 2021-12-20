@@ -9,7 +9,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 public class leave implements Listener {
 
     @EventHandler
-    void onPlayerLeave(PlayerQuitEvent e){
+    public void onPlayerLeave(PlayerQuitEvent e){
         Player player = e.getPlayer();
         e.setQuitMessage(ChatColor.DARK_GRAY+ "Goodbye, " + ChatColor.GOLD + player.getDisplayName());
     }

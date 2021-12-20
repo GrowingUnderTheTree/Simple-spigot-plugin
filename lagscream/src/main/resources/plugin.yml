@@ -1,7 +1,7 @@
-name: Screamer
+name: Simple-spigot-plugin
 version: '${project.version}'
 main: io.github.growingunderthetree.screamer.Screamer
-api-version: 1.17
+api-version: 1.18.1
 load: STARTUP
 description: A simple plugin for broadcasting messages and clear lag
 commands:

@@ -1,11 +1,12 @@
 io\github\growingunderthetree\screamer\commands.class
-io\github\growingunderthetree\screamer\debug.class
-io\github\growingunderthetree\screamer\shrink.class
 io\github\growingunderthetree\events\fall.class
 io\github\growingunderthetree\screamer\broadcast.class
 io\github\growingunderthetree\screamer\Screamer.class
-io\github\growingunderthetree\screamer\tery.class
 io\github\growingunderthetree\events\join.class
+io\github\growingunderthetree\screamer\debug.class
+io\github\growingunderthetree\screamer\shrink.class
+io\github\growingunderthetree\screamer\tery.class
 io\github\growingunderthetree\events\leave.class
+io\github\growingunderthetree\events\dead.class
 io\github\growingunderthetree\screamer\pvpstart.class
 io\github\growingunderthetree\screamer\random.class

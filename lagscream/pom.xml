@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.GrowingUnderTheTree</groupId>
-    <artifactId>screamer</artifactId>
-    <version>BETA3.1</version>
+    <artifactId>spigotlolol</artifactId>
+    <version>BETA3.2</version>
     <packaging>jar</packaging>
 
     <name>Screamer</name>
